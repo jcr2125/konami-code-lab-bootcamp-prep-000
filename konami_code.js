@@ -4,7 +4,7 @@ function init() {
   
   let index = 0;
   
-  document.addEventListener("keydown", onKeyDownHandler);
+  document.addEventListener("keydown", onKeyDownHandler, false);
 
   function onKeyDownHandler(e) {
     
@@ -14,7 +14,8 @@ function init() {
       index++;
    
       if (index === code.length - 1) {
-        alert("Hurray!");
+        
+        alert("Konami Code FTW!!!!!!");
    
         index = 0;
       }
